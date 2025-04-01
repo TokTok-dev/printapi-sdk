@@ -1,0 +1,15 @@
+{
+    "statusCode": 200,
+    "headers": {
+        "Alt-Svc": "h3=\":443\"; ma=2592000",
+        "Cache-Control": "no-cache",
+        "Content-Length": "686",
+        "Content-Type": "application\/json;charset=UTF-8",
+        "Date": "Tue, 01 Apr 2025 18:26:43 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "Caddy",
+        "X-Powered-By": "ASP.NET"
+    },
+    "data": "{\"access_token\":\"S-n9f58j2v5Xa4UUMXPcJO7pRdiSaw68e5BLorhmTLBp4ItnMCO0PIvUBEFFkZ5DAQLjiShjgExmsEdXPUZu0oKC60DLjjFPwdu-OwLmyaJS0R8jrj7CHu40oow_QkCvzj6YivT7dLqiVZvCeMK7BWtD6LL3-IPaqgtJm1wipwm4FY_f-a1YEoyoN4ULA6ITU1grKXBEvbFOokFqiNNXl8_3c8jEDSUgQVz91o0CAKgZWHCsE3pflUWZ3L0uTzX6gIVLUASs_p-HIw3qmK5zZ4X9DoMlh6N-bToOXhaDi_ueUvxLDzQbW_sHClt3-EOGsD8Zfi8WhFiJBkbUNm4ULqO9n0g1J-BBK7TScfItHSCwJrnhqnlNfbP6QCdpgJoTaeZUVtVjovGLxlacF9hDUM4NT1GWTbNUI2gA4v8pcN4mgsd4j3TdjCm4a1Zrwm73gUh2rhDrlwgVH-FAV6kmgZltMs3aZZL3-XLvTKGxlK0-x1tOvcMC7M1WK8YM9llAcpZllg\",\"token_type\":\"bearer\",\"expires_in\":14399,\"scope\":\"products:browse shipping:quote coupons:quote orders:place orders:track files:upload orders:browse\"}"
+}

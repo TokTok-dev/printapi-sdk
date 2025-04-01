@@ -1,0 +1,15 @@
+{
+    "statusCode": 200,
+    "headers": {
+        "Alt-Svc": "h3=\":443\"; ma=2592000",
+        "Cache-Control": "no-cache",
+        "Content-Length": "1766",
+        "Content-Type": "application\/json; charset=utf-8",
+        "Date": "Mon, 31 Mar 2025 19:04:19 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "Caddy",
+        "X-Powered-By": "ASP.NET"
+    },
+    "data": "{\r\n  \"id\": \"11410410\",\r\n  \"dateTime\": \"2025-03-29T21:40:20.003\",\r\n  \"status\": \"Created\",\r\n  \"email\": \"info@printapi.nl\",\r\n  \"productionSpeed\": \"Standard\",\r\n  \"items\": [\r\n    {\r\n      \"id\": \"01804\",\r\n      \"productId\": \"boek_hc_a5_sta\",\r\n      \"pageCount\": 32,\r\n      \"quantity\": 1,\r\n      \"files\": {\r\n        \"content\": {\r\n          \"status\": \"DownloadFailed\",\r\n          \"downloadUrl\": \"https:\/\/www.printapi.nl\/sample-book-a5-content.pdf\"\r\n        },\r\n        \"cover\": {\r\n          \"status\": \"Accepted\",\r\n          \"downloadUrl\": \"https:\/\/www.printapi.nl\/sample-book-a5-cover.pdf\"\r\n        }\r\n      },\r\n      \"options\": []\r\n    }\r\n  ],\r\n  \"shipping\": {\r\n    \"method\": {\r\n      \"name\": \"Brievenbuspakje\",\r\n      \"isTrackable\": true\r\n    },\r\n    \"address\": {\r\n      \"name\": \"Print API\",\r\n      \"line1\": \"Osloweg 75\",\r\n      \"postCode\": \"9700 GE\",\r\n      \"city\": \"Groningen\",\r\n      \"country\": \"NL\"\r\n    }\r\n  },\r\n  \"invoice\": {\r\n    \"production\": {\r\n      \"cost\": 10.69,\r\n      \"taxes\": [\r\n        {\r\n          \"rate\": 0.09,\r\n          \"amount\": 0.96,\r\n          \"calculatedOver\": 10.69\r\n        }\r\n      ]\r\n    },\r\n    \"shipping\": {\r\n      \"cost\": 2.95,\r\n      \"taxes\": [\r\n        {\r\n          \"rate\": 0.09,\r\n          \"amount\": 0.27,\r\n          \"calculatedOver\": 2.95\r\n        }\r\n      ]\r\n    },\r\n    \"handling\": {\r\n      \"cost\": 0.87,\r\n      \"taxes\": [\r\n        {\r\n          \"rate\": 0.09,\r\n          \"amount\": 0.08,\r\n          \"calculatedOver\": 0.87\r\n        }\r\n      ]\r\n    },\r\n    \"discount\": {\r\n      \"cost\": 0.0,\r\n      \"taxes\": []\r\n    },\r\n    \"total\": {\r\n      \"cost\": 14.51,\r\n      \"taxes\": [\r\n        {\r\n          \"rate\": 0.09,\r\n          \"amount\": 1.31,\r\n          \"calculatedOver\": 14.51\r\n        }\r\n      ]\r\n    }\r\n  },\r\n  \"invoicingState\": \"Included\"\r\n}"
+}

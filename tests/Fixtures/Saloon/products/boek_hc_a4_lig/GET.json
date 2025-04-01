@@ -1,0 +1,15 @@
+{
+    "statusCode": 200,
+    "headers": {
+        "Alt-Svc": "h3=\":443\"; ma=2592000",
+        "Cache-Control": "no-cache",
+        "Content-Length": "1982",
+        "Content-Type": "application\/json; charset=utf-8",
+        "Date": "Tue, 01 Apr 2025 18:27:02 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "Caddy",
+        "X-Powered-By": "ASP.NET"
+    },
+    "data": "{\r\n  \"id\": \"boek_hc_a4_lig\",\r\n  \"name\": \"Boek Hardcover A4 Liggend\",\r\n  \"category\": \"Hardcover boeken\",\r\n  \"taxRate\": 0.09,\r\n  \"cost\": {\r\n    \"base\": 10.88,\r\n    \"perExtraPage\": 0.25\r\n  },\r\n  \"minQuantity\": 1,\r\n  \"maxQuantity\": 1000,\r\n  \"hasVariablePageCount\": true,\r\n  \"minPageCount\": 24,\r\n  \"maxPageCount\": 200,\r\n  \"pageCountIncrement\": 2,\r\n  \"paperThickness\": 0.14,\r\n  \"options\": [\r\n    {\r\n      \"id\": \"cover_finish\",\r\n      \"default\": \"laminate_gloss\",\r\n      \"label\": \"Afwerking omslag\",\r\n      \"choices\": [\r\n        {\r\n          \"value\": \"laminate_gloss\",\r\n          \"name\": \"Glans laminaat\",\r\n          \"cost\": {\r\n            \"base\": 0.00,\r\n            \"perExtraPage\": 0.00\r\n          }\r\n        },\r\n        {\r\n          \"value\": \"laminate_matte\",\r\n          \"name\": \"Mat laminaat\",\r\n          \"cost\": {\r\n            \"base\": 2.75,\r\n            \"perExtraPage\": 0.00\r\n          }\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"id\": \"content_finish\",\r\n      \"default\": \"standard\",\r\n      \"label\": \"Afwerking binnenwerk\",\r\n      \"choices\": [\r\n        {\r\n          \"value\": \"standard\",\r\n          \"name\": \"Standaard\",\r\n          \"cost\": {\r\n            \"base\": 0.00,\r\n            \"perExtraPage\": 0.00\r\n          }\r\n        },\r\n        {\r\n          \"value\": \"uv_gloss\",\r\n          \"name\": \"UV Hoogglans\",\r\n          \"cost\": {\r\n            \"base\": 1.98,\r\n            \"perExtraPage\": 0.07\r\n          }\r\n        }\r\n      ]\r\n    }\r\n  ],\r\n  \"files\": [\r\n    {\r\n      \"id\": \"content\",\r\n      \"height\": 216.00,\r\n      \"width\": 303.00,\r\n      \"bleed\": 3.00,\r\n      \"accepts\": [\r\n        \"PDF\"\r\n      ]\r\n    },\r\n    {\r\n      \"id\": \"cover\",\r\n      \"height\": 253.00,\r\n      \"width\": 646.00,\r\n      \"bleed\": 19.00,\r\n      \"accepts\": [\r\n        \"PDF\"\r\n      ]\r\n    }\r\n  ],\r\n  \"productionTimeInDays\": 3,\r\n  \"productionTimes\": [\r\n    {\r\n      \"speed\": \"Standard\",\r\n      \"days\": 3,\r\n      \"limitHour\": 11\r\n    },\r\n    {\r\n      \"speed\": \"Express\",\r\n      \"days\": 2,\r\n      \"limitHour\": 11\r\n    }\r\n  ]\r\n}"
+}

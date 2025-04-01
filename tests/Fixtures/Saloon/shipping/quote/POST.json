@@ -1,0 +1,15 @@
+{
+    "statusCode": 200,
+    "headers": {
+        "Alt-Svc": "h3=\":443\"; ma=2592000",
+        "Cache-Control": "no-cache",
+        "Content-Length": "163",
+        "Content-Type": "application\/json; charset=utf-8",
+        "Date": "Fri, 28 Mar 2025 20:38:44 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "Caddy",
+        "X-Powered-By": "ASP.NET"
+    },
+    "data": "{\r\n  \"shipping\": 2.95,\r\n  \"handling\": 0.40,\r\n  \"taxRate\": 0.21,\r\n  \"payment\": 4.15,\r\n  \"method\": {\r\n    \"name\": \"Brievenbuspakje\",\r\n    \"isTrackable\": true\r\n  }\r\n}"
+}
