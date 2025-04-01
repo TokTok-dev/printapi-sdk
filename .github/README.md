@@ -15,17 +15,29 @@ composer require toktokdev/printapi-sdk
 
 ## Usage
 
-Initialize the API client:
+Initialize the API client. Oauth2 authentication is handled automatically by the SDK using the client credentials flow:
 
 ```php
 use PrintAPI\PrintAPI;
   
+// 1. Initialize the API client
 $api = new PrintApi(
     clientId: 'your_client_id',
     clientSecret: 'your_client_secret',
     testMode: true // Use test environment
 );
+
+// 2. Create an access token authenticator
+
+$authenticator = $api->getAccessToken();
+
+// 3. Authenticate the connector
+
+$api->authenticate($authenticator);
+
 ```
+
+See the [official Saloon documentation](https://docs.saloon.dev/digging-deeper/oauth2-authentication/client-credentials-grant) for more information on the OAuth2 Client Credentials Grant.
 
 ## API Implementation Status
 
