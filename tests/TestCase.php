@@ -41,7 +41,7 @@ abstract class TestCase extends \PHPUnit\Framework\TestCase
                 $query = urldecode($pendingRequest->getUri()->getQuery());
 
                 $filename = $query ? $method.'?'.$query : $method;
-                $path = mb_ltrim(implode('/', [$endpoint, $filename]), '/');
+                $path = ltrim(implode('/', [$endpoint, $filename]), '/');
 
                 return MockResponse::fixture(
                     (string) preg_replace('/[^a-zA-Z0-9\/_\-]/', '-', $path)
