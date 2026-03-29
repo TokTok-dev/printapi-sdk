@@ -12,6 +12,7 @@ use Saloon\Http\BaseResource;
 use Throwable;
 use TokTokDev\PrintAPI\DataTransferObjects\Order\OrderDto;
 use TokTokDev\PrintAPI\DataTransferObjects\Order\OrderStatusDto;
+use TokTokDev\PrintAPI\PrintApi;
 use TokTokDev\PrintAPI\Requests\Orders\CreateOrder;
 use TokTokDev\PrintAPI\Requests\Orders\GetOrder;
 use TokTokDev\PrintAPI\Requests\Orders\GetOrders;
@@ -19,7 +20,7 @@ use TokTokDev\PrintAPI\Requests\Orders\GetOrderStatus;
 use TokTokDev\PrintAPI\Requests\Orders\GetOrderStatuses;
 
 /**
- * @property \TokTokDev\PrintAPI\PrintApi $connector
+ * @property PrintApi $connector
  */
 final class Orders extends BaseResource
 {
@@ -58,9 +59,9 @@ final class Orders extends BaseResource
     }
 
     /**
-     * @throws \Saloon\Exceptions\Request\FatalRequestException
+     * @throws FatalRequestException
      * @throws Throwable
-     * @throws \Saloon\Exceptions\Request\RequestException
+     * @throws RequestException
      */
     public function status(string $id): OrderStatusDto
     {
@@ -71,9 +72,9 @@ final class Orders extends BaseResource
     }
 
     /**
-     * @throws \Saloon\Exceptions\Request\FatalRequestException
+     * @throws FatalRequestException
      * @throws Throwable
-     * @throws \Saloon\Exceptions\Request\RequestException
+     * @throws RequestException
      */
     public function syncStatuses(DateTimeImmutable $since)
     {

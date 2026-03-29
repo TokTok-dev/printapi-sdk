@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Collection;
+use Illuminate\Support\LazyCollection;
 use TokTokDev\PrintAPI\DataTransferObjects\Order\OrderDto;
 use TokTokDev\PrintAPI\DataTransferObjects\Order\OrderInvoiceDto;
 use TokTokDev\PrintAPI\DataTransferObjects\Order\OrderItemDto;
@@ -71,7 +72,7 @@ test('can create an order', function () {
 test('can retrieve all orders', function () {
     $response = $this->printApi->orders()->all();
 
-    expect($response)->toBeInstanceOf(Illuminate\Support\LazyCollection::class)
+    expect($response)->toBeInstanceOf(LazyCollection::class)
         ->and($response->count())->toBe(6)
         ->and($response->first())->toBeInstanceOf(OrderSummaryDto::class);
 });

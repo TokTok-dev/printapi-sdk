@@ -10,11 +10,12 @@ use Saloon\Exceptions\Request\RequestException;
 use Saloon\Http\BaseResource;
 use Throwable;
 use TokTokDev\PrintAPI\DataTransferObjects\Product\ProductDto;
+use TokTokDev\PrintAPI\PrintApi;
 use TokTokDev\PrintAPI\Requests\Products\GetProduct;
 use TokTokDev\PrintAPI\Requests\Products\GetProducts;
 
 /**
- * @property \TokTokDev\PrintAPI\PrintApi $connector
+ * @property PrintApi $connector
  */
 final class Products extends BaseResource
 {

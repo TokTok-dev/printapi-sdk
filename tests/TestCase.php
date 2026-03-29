@@ -38,11 +38,14 @@ abstract class TestCase extends \PHPUnit\Framework\TestCase
             '*' => function (PendingRequest $pendingRequest) {
                 $endpoint = $pendingRequest->getRequest()->resolveEndpoint();
                 $method = $pendingRequest->getMethod()->value;
-                $query = $pendingRequest->getUri()->getQuery();
+                $query = urldecode($pendingRequest->getUri()->getQuery());
 
                 $filename = $query ? $method.'?'.$query : $method;
+                $path = mb_ltrim(implode('/', [$endpoint, $filename]), '/');
 
-                return MockResponse::fixture(implode('/', [$endpoint, $filename]));
+                return MockResponse::fixture(
+                    (string) preg_replace('/[^a-zA-Z0-9\/_\-]/', '-', $path)
+                );
             },
         ]);
     }

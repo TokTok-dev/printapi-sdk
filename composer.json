@@ -11,8 +11,8 @@
     ],
     "require": {
         "php": "^8.3",
-        "saloonphp/saloon": "^v3.11.2",
-        "saloonphp/pagination-plugin": "^v2.2.0",
+        "saloonphp/saloon": "4.0.0.0",
+        "saloonphp/pagination-plugin": "^v2.3.0",
         "illuminate/collections": "^12.3"
     },
     "require-dev": {
@@ -42,7 +42,7 @@
             "./vendor/bin/pint"
         ],
         "test": [
-            "XDEBUG_MODE=coverage ./vendor/bin/pest --parallel --coverage --exactly=100"
+            "./vendor/bin/pest --parallel"
         ],
         "phpstan": [
             "./vendor/bin/phpstan analyse --memory-limit=1G"

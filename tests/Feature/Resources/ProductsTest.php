@@ -2,13 +2,14 @@
 
 declare(strict_types=1);
 
+use Illuminate\Support\LazyCollection;
 use TokTokDev\PrintAPI\DataTransferObjects\Product\ProductDto;
 use TokTokDev\PrintAPI\DataTransferObjects\Product\ProductSummaryDto;
 
 test('can retrieve all products', function () {
     $response = $this->printApi->products()->all();
 
-    expect($response)->toBeInstanceOf(Illuminate\Support\LazyCollection::class)
+    expect($response)->toBeInstanceOf(LazyCollection::class)
         ->and($response->count())->toBe(499)
         ->and($response->first())->toBeInstanceOf(ProductSummaryDto::class);
 });
